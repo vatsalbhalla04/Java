@@ -1,0 +1,20 @@
+Some Important Info Regarding String And StringBuffer : 
+1)In java the String is not a datatype it's an class .
+
+2)In java String is an immutable class because : Immutability allows for optimizations like 
+string pooling, which can improve performance.
+
+3)String Pooling : String pool is nothing but a storage area in Java heap where string literals
+are stored.It is also known as String Intern Pool or String Constant Pool. 
+It is just like object allocation. By default, it is empty and privately maintained by the Java String class. 
+
+Whenever we create a string the string object occupies some space in the heap memory.
+Creating a number of strings may increase the cost and memory too which may reduce the performance also.
+
+4)A StringBuffer is a class in Java used to create and manipulate mutable strings 
+(i.e., strings that can be modified after they are created). 
+Unlike the String class in Java, which creates immutable strings, 
+StringBuffer allows you to perform operations like appending, inserting, 
+replacing, or deleting characters without creating new objects.
+
+5)String Buffer Methods & Difference Between String, StringBuffer, and StringBuilder :  "https://chatgpt.com/share/6788f521-2558-800f-a658-3b45e4b949d9"
