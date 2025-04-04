@@ -1,17 +1,16 @@
-//Write program to print alternate digit and alphabets
-public class p36 {
-   public static void main(String[] args) {
-        int n = 5 ; 
-        char ch = 'a';
-        for(int i = 0 ; i<=n ; i++){
-            for(int j = 0 ; j<=i ; j++){
-                if(i % 2 == 0 ) {
-                    System.out.print(ch);
-                    ch++;
-                }
-                else System.out.print(j);
-            }
-            System.out.println();
+// File: p36.java
+//Inverted Numeric Pyramid with Leading Spaces
+public class p41 {
+    public static void main(String[] args) {
+    int n = 5; 
+    for(int i = 0 ; i<=n ; i++){
+        for(int j = 0 ; j<=i ; j++){
+            System.out.print(" ");
         }
-   } 
+        for(int j = n ; j>=i ; j--){
+            System.out.print(i+ " ");
+        }
+        System.out.println();
+    }
+    }
 }

@@ -1,14 +1,13 @@
-// Writ program to print small alphabet in gradually increasing order :
-public class p34 {
+// File: p34.java
+public class p4 {
     public static void main(String[] args) {
-        int n = 5;
-        for (int i = 0; i <= n; i++) {
-            for (int j = 0; j <= i; j++) {
-                System.out.print((char) (j + 97) + " "); // Corrected ASCII conversion
+        int n = 5 ; 
+        for(int i = 0 ; i<=n ; i++){
+            for(int j = 0 ; j<i ;j++){
+                if(i % 2 == 0) System.out.print("1");
+                else System.out.print("0");
             }
             System.out.println();
         }
     }
 }
-              
-            

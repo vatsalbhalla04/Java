@@ -1,27 +1,14 @@
-// Print the borders of Diamond pattern : 
-public class p23 {
+// File: p23.java
+//  Write program to print 1 if number of row is even and 0 if number of row odd -- Sqaure Pattern 
+public class p3 {
     public static void main(String[] args) {
         int n = 5 ; 
-        for (int i = 1; i <= n; i++) {
-            for (int j = n; j > i; j--) {
-                System.out.print(" ");
-            }
-            for (int j = 1; j <= (2 * i - 1); j++) {
-                if (j == 1 || j == (2 * i - 1)) System.out.print("*");
-                else System.out.print(" ");
+        for(int i = 0 ; i<=n ; i++){
+            for(int j = 0 ; j<=n ; j++){
+                if(i % 2 == 0) System.out.print("1");
+                else System.out.print("0");
             }
             System.out.println();
         }
-        // Upside-down : 
-        for (int i = n - 1; i >= 1; i--) {
-            for (int j = n; j > i; j--) {
-                System.out.print(" ");
-            }
-            for (int j = 1; j <= (2 * i - 1); j++) {
-                if (j == 1 || j == (2 * i - 1)) System.out.print("*");
-                else System.out.print(" ");
-            }
-            System.out.println();
-        }
-    }   
+    }
 }
