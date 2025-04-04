@@ -1,3 +1,4 @@
+// File: oops06.java
 // Object Reference Program : 
 class stu2 {
     int sno ; 

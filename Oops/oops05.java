@@ -1,3 +1,4 @@
+// File: oops05.java
 // Basic class program using Scanner class:
 import java.util.Scanner;
 class stu1 {
