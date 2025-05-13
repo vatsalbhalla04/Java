@@ -1,44 +1,49 @@
-// File: oops11.java
-// Constructor overloading : 
-class stu5{
-    int sno ; 
-    String name ; 
-    int eng , hindi ;
+// Obj as Args
+import java.util.Scanner;
 
-    stu5(){ // W/o arg's 
-            sno = 5 ; 
-            name = "Vatsal";
-            eng = 23 ; 
-            hindi = 34 ; 
+class Math1 {
+    int a, b;
+
+    void setData() {
+        @SuppressWarnings("resource")
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the value of a:");
+        a = s.nextInt();
+        System.out.println("Enter the value of b:");
+        b = s.nextInt();
     }
 
-    stu5(int x , String y , int a , int b){// with arg's 
-        sno = x ;
-        name = y ; 
-        a = eng ;
-        b = hindi ; 
+    void printData() {
+        System.out.println("Value of A is: " + a + " and B is: " + b);
     }
 
-    stu5(int x , String y){ // with 2 arg's
-        sno = x ; 
-        name = y ; 
-        eng = 30 ; 
-        hindi  = 40 ;
-    }
-
-    void printData(){
-        System.out.println("Name of the Student is :"+name +" || "+ "The Roll Number is : " +sno +" || "+ "Marks in english : " + eng +" || "+ "Marks in Hindi : " +hindi);
+    void add(Math1 m1, Math1 m2) {  
+        a = m1.a + m2.a;
+        b = m1.b + m2.b;
     }
 }
 
-public class oops8 {
+public class oops11 {
     public static void main(String[] args) {
-        stu5 s1 = new stu5();
-        stu5 s2 = new stu5(1, "Raj", 12, 13);
-        stu5 s3 = new stu5(2, "Rahul");
+        Math1 m1 = new Math1();
+        Math1 m2 = new Math1();
+        Math1 m3 = new Math1();
 
-        s1.printData();
-        s2.printData();
-        s3.printData();
+        System.out.println("Enter values for m1:");
+        m1.setData();
+        
+        System.out.println("Enter values for m2:");
+        m2.setData();
+
+        System.out.println("\nValues of m1:");
+        m1.printData();
+        
+        System.out.println("Values of m2:");
+        m2.printData();
+
+        m3.add(m1, m2);
+        
+        System.out.println("\nResult of addition (m3):");
+        m3.printData();
     }
 }
